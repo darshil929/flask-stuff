@@ -4,6 +4,5 @@ To create the database tables without encountering the `RuntimeError: Working ou
 
 ```
 >>> from server import app, db
->>> with app.app_context():
-...     db.create_all()
+>>> with app.app_context(): db.create_all()
 ```
